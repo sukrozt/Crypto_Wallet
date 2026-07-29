@@ -119,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_WALLET_MODEL = 'wallets.Wallet'
+FERNET_KEY = Fernet.generate_key()
